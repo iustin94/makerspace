@@ -1,0 +1,59 @@
+<nav>
+  <div class="container mx-auto flex items-center justify-between px-4 py-6">
+    <a class="flex items-center gap-2" href="{{ .Site.BaseURL }}">
+      {{ with .Site.Params.logo }}
+      <img src="{{ . | absURL }}" alt="{{ $.Site.Title }}" class="h-10 w-auto xl:h-12">
+      {{ else }}
+      <span class="text-secondary text-xl font-semibold uppercase xl:text-2xl">{{ $.Site.Title }}</span>
+      {{ end }}
+    </a>
+    <button
+      class="cursor-pointer xl:hidden"
+      type="button"
+      onclick="document.getElementById('navbarContent').classList.toggle('-translate-y-full')"
+      aria-label="Toggle Navigation"
+    >
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <div
+      class="fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 bg-white duration-500 xl:relative xl:translate-y-0 xl:flex-row z-50"
+      id="navbarContent"
+    >
+      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden">
+        <a class="flex items-center gap-2" href="{{ .Site.BaseURL }}">
+          {{ with .Site.Params.logo }}
+          <img src="{{ . | absURL }}" alt="{{ $.Site.Title }}" class="h-10 w-auto">
+          {{ else }}
+          <span class="text-secondary text-xl font-semibold uppercase">{{ $.Site.Title }}</span>
+          {{ end }}
+        </a>
+        <button
+          class="cursor-pointer"
+          type="button"
+          onclick="document.getElementById('navbarContent').classList.toggle('-translate-y-full')"
+          aria-label="Close Navigation"
+        >
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="flex flex-col gap-8 xl:flex-row">
+        {{ range site.Menus.main }}
+          <li class="text-center">
+            <a class="text-secondary hover:text-accent" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+      <ul class="flex flex-col gap-8 xl:flex-row">
+        {{ range .Site.Menus.buttons }}
+          <li class="text-center">
+            <a class="bg-accent hover:bg-accent-2 rounded px-6 py-2 text-white" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,119 @@
+{{/* Bento Workspace Grid */}}
+{{/* Usage: {{ partial "bento-workspace.html" . }} */}}
+
+<section class="bg-primary py-16">
+  <div class="container mx-auto px-4">
+
+    <!-- Desktop Bento Grid -->
+    <div class="hidden xl:grid grid-cols-10 grid-rows-[repeat(11,60px)] gap-4">
+
+      <!-- 3D Print -->
+      <a href="/workspace/3dprint/"
+        class="group relative col-span-2 row-span-5 overflow-hidden rounded-[10px] bg-cover bg-center"
+        style="background-image: url('{{ "images/bento/3d-print.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/50 transition-all duration-300 group-hover:bg-secondary/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <p class="absolute bottom-4 left-4 font-secondary text-xl font-bold text-white">3D Print</p>
+      </a>
+
+      <!-- Laser Cutter -->
+      <a href="/workspace/laser/"
+        class="group relative col-span-5 row-span-3 overflow-hidden rounded-[10px] bg-cover bg-center"
+        style="background-image: url('{{ "images/bento/Laser-cutter.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/50 transition-all duration-300 group-hover:bg-secondary/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <p class="absolute bottom-4 left-4 font-secondary text-xl font-bold text-white">CNC Router & Laser Cutter</p>
+      </a>
+
+      <!-- Sewing -->
+      <a href="/workspace/sewing/"
+        class="group relative col-span-3 row-span-3 overflow-hidden rounded-[10px] bg-cover bg-center"
+        style="background-image: url('{{ "images/bento/sewing.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/50 transition-all duration-300 group-hover:bg-secondary/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <p class="absolute bottom-4 left-4 font-secondary text-xl font-bold text-white">Sewing</p>
+      </a>
+
+      <!-- Main Text Block -->
+      <div class="col-span-8 row-span-5 flex flex-col items-center justify-center rounded-[10px] bg-white p-8 text-center shadow-lg">
+        <h1 class="mb-4 font-secondary text-4xl font-bold text-secondary xl:text-5xl">Your Very Own Makerspace</h1>
+        <h3 class="mb-8 text-xl text-gray-dark">Explore our space, tools and workshops</h3>
+        <a href="/workspace/" class="bg-accent hover:bg-accent-2 rounded-[10px] px-8 py-3 font-medium text-white transition-colors duration-300">
+          Explore Space
+        </a>
+      </div>
+
+      <!-- Woodwork -->
+      <a href="/workspace/woodwork/"
+        class="group relative col-span-2 row-span-6 overflow-hidden rounded-[10px] bg-cover bg-center"
+        style="background-image: url('{{ "images/bento/woodworking.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/50 transition-all duration-300 group-hover:bg-secondary/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <p class="absolute bottom-4 left-4 font-secondary text-xl font-bold text-white">Wood Work</p>
+      </a>
+
+      <!-- Metal Work -->
+      <a href="/workspace/metal/"
+        class="group relative col-span-3 row-span-3 overflow-hidden rounded-[10px] bg-cover bg-center"
+        style="background-image: url('{{ "images/bento/weld.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/50 transition-all duration-300 group-hover:bg-secondary/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <p class="absolute bottom-4 left-4 font-secondary text-xl font-bold text-white">Metal Work</p>
+      </a>
+
+      <!-- Electronics -->
+      <a href="/workspace/electronics/"
+        class="group relative col-span-5 row-span-3 overflow-hidden rounded-[10px] bg-cover bg-center"
+        style="background-image: url('{{ "images/bento/solder.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/50 transition-all duration-300 group-hover:bg-secondary/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <p class="absolute bottom-4 left-4 font-secondary text-xl font-bold text-white">Electronics</p>
+      </a>
+
+    </div>
+
+    <!-- Mobile Version: List -->
+    <div class="flex flex-col gap-4 xl:hidden">
+
+      <a href="/workspace/3dprint/" class="block rounded-[10px] bg-white px-6 py-4 text-center font-secondary font-semibold text-secondary shadow-sm transition-colors hover:bg-accent hover:text-white">
+        3D Print
+      </a>
+
+      <a href="/workspace/electronics/" class="block rounded-[10px] bg-white px-6 py-4 text-center font-secondary font-semibold text-secondary shadow-sm transition-colors hover:bg-accent hover:text-white">
+        Electronics
+      </a>
+
+      <!-- Mobile Hero -->
+      <div class="relative overflow-hidden rounded-[10px] bg-cover bg-center py-16"
+        style="background-image: url('{{ "images/bento/weld.png" | absURL }}');">
+        <div class="absolute inset-0 bg-secondary/60"></div>
+        <div class="relative z-10 text-center">
+          <h2 class="font-secondary text-2xl font-bold text-primary-2">Your Very Own</h2>
+          <h2 class="font-secondary text-3xl font-bold text-accent">Makerspace</h2>
+        </div>
+      </div>
+
+      <a href="/workspace/laser/" class="block rounded-[10px] bg-white px-6 py-4 text-center font-secondary font-semibold text-secondary shadow-sm transition-colors hover:bg-accent hover:text-white">
+        CNC Router & Laser Cutter
+      </a>
+
+      <a href="/workspace/metal/" class="block rounded-[10px] bg-white px-6 py-4 text-center font-secondary font-semibold text-secondary shadow-sm transition-colors hover:bg-accent hover:text-white">
+        Metal Work
+      </a>
+
+      <a href="/workspace/woodwork/" class="block rounded-[10px] bg-white px-6 py-4 text-center font-secondary font-semibold text-secondary shadow-sm transition-colors hover:bg-accent hover:text-white">
+        Wood Work
+      </a>
+
+      <a href="/workspace/sewing/" class="block rounded-[10px] bg-white px-6 py-4 text-center font-secondary font-semibold text-secondary shadow-sm transition-colors hover:bg-accent hover:text-white">
+        Sewing
+      </a>
+
+      <a href="/workspace/" class="bg-accent hover:bg-accent-2 block rounded-[10px] px-6 py-4 text-center font-secondary font-semibold text-white shadow-sm transition-colors">
+        Explore Space
+      </a>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,132 @@
+{{ define "main" }}
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h1 class="text-secondary mb-8 text-center font-secondary text-4xl font-bold xl:text-6xl">{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p class="mx-auto mb-16 text-center text-gray-dark xl:max-w-[50%]">{{ . }}</p>
+    {{ end }}
+
+    <div class="flex flex-col gap-8 xl:flex-row">
+      <!-- Sidebar -->
+      <aside class="xl:w-72 xl:shrink-0">
+        <nav class="bg-primary sticky top-8 rounded-[10px] p-6">
+          <h2 class="text-secondary mb-4 font-secondary text-lg font-bold">Recent Posts</h2>
+
+          <!-- Search -->
+          <div class="mb-6">
+            <input
+              type="search"
+              id="post-search"
+              placeholder="Search posts..."
+              class="w-full rounded-[10px] border border-primary-2 px-4 py-2 text-sm focus:border-accent focus:outline-none"
+            >
+          </div>
+
+          <!-- Post List -->
+          <ul class="flex flex-col gap-3" id="post-list">
+            {{ range .Pages.ByDate.Reverse }}
+            <li>
+              <a href="#{{ .File.BaseFileName }}" class="post-link group block rounded-[10px] p-2 duration-200 hover:bg-white">
+                <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-xs text-secondary-2">
+                  {{ .Date.Format "Jan 2, 2006" }}
+                </time>
+                <span class="post-title text-secondary block text-sm font-medium group-hover:text-accent">
+                  {{ .Title }}
+                </span>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+
+          <!-- Archive -->
+          <div class="mt-6 border-t border-primary-2 pt-6">
+            <h3 class="text-secondary mb-3 text-sm font-semibold uppercase tracking-wide">Archive</h3>
+            <ul class="flex flex-col gap-1 text-sm">
+              {{ range .Pages.GroupByDate "January 2006" }}
+              <li class="text-gray-dark">{{ .Key }} ({{ len .Pages }})</li>
+              {{ end }}
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="min-w-0 flex-1">
+        {{ range .Pages.ByDate.Reverse }}
+        <article id="{{ .File.BaseFileName }}" class="mb-12 scroll-mt-8 rounded-[10px] bg-white p-6 shadow-sm xl:p-8">
+          <header class="mb-6">
+            <div class="mb-2 flex flex-wrap items-center gap-3">
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="text-sm text-secondary-2">
+                {{ .Date.Format "January 2, 2006" }}
+              </time>
+              {{ with .Params.category }}
+              <span class="bg-accent/10 text-accent rounded-full px-3 py-1 text-xs font-medium">
+                {{ . }}
+              </span>
+              {{ end }}
+            </div>
+            <h2 class="text-secondary font-secondary text-2xl font-bold xl:text-3xl">{{ .Title }}</h2>
+            {{ with .Params.author }}
+            <p class="mt-2 text-sm text-secondary-2">By {{ . }}</p>
+            {{ end }}
+          </header>
+
+          <div class="prose prose-lg max-w-none prose-headings:font-secondary prose-headings:text-secondary prose-a:text-accent">
+            {{ .Content }}
+          </div>
+
+          {{ with .Params.tags }}
+          <footer class="mt-6 border-t border-primary-2 pt-6">
+            <div class="flex flex-wrap gap-2">
+              {{ range . }}
+              <span class="bg-primary rounded-full px-3 py-1 text-xs text-gray-dark">{{ . }}</span>
+              {{ end }}
+            </div>
+          </footer>
+          {{ end }}
+        </article>
+        {{ end }}
+
+        <!-- Pagination -->
+        {{ template "_internal/pagination.html" . }}
+      </main>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const posts = document.querySelectorAll('main article[id]');
+  const postLinks = document.querySelectorAll('#post-list a');
+
+  // Scroll spy
+  function updateActivePost() {
+    let currentPost = '';
+    posts.forEach(post => {
+      const postTop = post.offsetTop - 150;
+      if (window.scrollY >= postTop) {
+        currentPost = post.getAttribute('id');
+      }
+    });
+    postLinks.forEach(link => {
+      link.classList.remove('bg-white');
+      if (link.getAttribute('href') === '#' + currentPost) {
+        link.classList.add('bg-white');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActivePost);
+  updateActivePost();
+
+  // Search filter
+  document.getElementById('post-search').addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase();
+    postLinks.forEach(link => {
+      const title = link.querySelector('.post-title').textContent.toLowerCase();
+      link.parentElement.style.display = title.includes(query) ? '' : 'none';
+    });
+  });
+});
+</script>
+{{ end }}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Volunteer Spotlight on O&#39;Town Makerspace</title>
+    <link>http://localhost:1313/tags/volunteer-spotlight/</link>
+    <description>Recent content in Volunteer Spotlight on O&#39;Town Makerspace</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/volunteer-spotlight/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Volunteer Spotlight: Maria&#39;s Story</title>
+      <link>http://localhost:1313/news/volunteer-spotlight/</link>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/volunteer-spotlight/</guid>
+      <description>&lt;p&gt;Meet Maria, who has been volunteering with us for over three years and has become an integral part of our community outreach team.&lt;/p&gt;&#xA;&lt;h3 id=&#34;her-journey&#34;&gt;Her Journey&lt;/h3&gt;&#xA;&lt;p&gt;Maria first joined as a student looking to gain experience, but quickly discovered a passion for community service that transformed her career path.&lt;/p&gt;&#xA;&lt;h3 id=&#34;in-her-own-words&#34;&gt;In Her Own Words&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Volunteering here has changed my life. I&amp;rsquo;ve gained skills, made friends, and found a sense of purpose I never expected.&amp;rdquo;&#xA;— Maria&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

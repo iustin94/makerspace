@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    {{ with .Title }}
+      <h1 class="text-secondary mb-8 text-center font-secondary text-4xl font-bold xl:text-6xl">{{ . }}</h1>
+    {{ end }}
+    {{ with .Date }}
+      <p class="mb-8 text-center text-secondary-2">{{ .Format "January 2, 2006" }}</p>
+    {{ end }}
+    {{ with .Params.description }}
+      <p class="mx-auto mb-16 text-center text-gray-dark xl:max-w-[50%]">{{ . }}</p>
+    {{ end }}
+    {{ with .Content }}
+      <div class="prose prose-lg mx-auto max-w-4xl prose-headings:font-secondary prose-headings:text-secondary prose-a:text-accent hover:prose-a:text-accent-2">
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on O&#39;Town Makerspace</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Documentation on O&#39;Town Makerspace</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>http://localhost:1313/docs/welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/welcome/</guid>
+      <description>&lt;p&gt;Thank you for joining our volunteer community. This documentation will help you get started and make the most of your experience with us.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Steps</title>
+      <link>http://localhost:1313/docs/first-steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/first-steps/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Complete Your Profile&lt;/strong&gt; - Make sure your contact information and availability are up to date.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Attend Orientation&lt;/strong&gt; - All new volunteers must attend an orientation session before participating in activities.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sign Up for Events&lt;/strong&gt; - Browse our &lt;a href=&#34;http://localhost:1313/events/&#34;&gt;events calendar&lt;/a&gt; and register for activities that interest you.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Code of Conduct</title>
+      <link>http://localhost:1313/docs/code-of-conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/code-of-conduct/</guid>
+      <description>&lt;p&gt;All volunteers are expected to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Treat everyone with respect and dignity&lt;/li&gt;&#xA;&lt;li&gt;Maintain confidentiality of sensitive information&lt;/li&gt;&#xA;&lt;li&gt;Represent the organization professionally&lt;/li&gt;&#xA;&lt;li&gt;Report any concerns to a team leader&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Safety Guidelines</title>
+      <link>http://localhost:1313/docs/safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/safety/</guid>
+      <description>&lt;h3 id=&#34;general-safety&#34;&gt;General Safety&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Always wear your volunteer ID badge&lt;/li&gt;&#xA;&lt;li&gt;Follow the buddy system when possible&lt;/li&gt;&#xA;&lt;li&gt;Know the location of first aid kits&lt;/li&gt;&#xA;&lt;li&gt;Report any incidents immediately&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;emergency-contacts&#34;&gt;Emergency Contacts&lt;/h3&gt;&#xA;&lt;p&gt;In case of emergency, contact: [Emergency Contact Info]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FAQ</title>
+      <link>http://localhost:1313/docs/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/faq/</guid>
+      <description>&lt;details&gt;&#xA;&lt;summary&gt;How many hours do I need to volunteer?&lt;/summary&gt;&#xA;&lt;p&gt;We ask for a minimum of X hours per month, but any contribution is appreciated.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&lt;details&gt;&#xA;&lt;summary&gt;Can I get a letter for my school/employer?&lt;/summary&gt;&#xA;&lt;p&gt;Yes! Contact the Volunteer Coordinator with your request.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&lt;details&gt;&#xA;&lt;summary&gt;What if I need to cancel my shift?&lt;/summary&gt;&#xA;&lt;p&gt;Please notify your team leader at least 24 hours in advance.&lt;/p&gt;&#xA;&lt;/details&gt;&#xA;&lt;details&gt;&#xA;&lt;summary&gt;How do I track my volunteer hours?&lt;/summary&gt;&#xA;&lt;p&gt;Hours are tracked through our volunteer portal. Make sure to log in after each activity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
