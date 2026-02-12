@@ -1,17 +1,11 @@
 ---
 title: "Safety Guidelines"
-weight: 11
-section: "Volunteer Guidelines"
+weight: 10
+section: "General Rules"
 anchor: "safety"
 ---
-
 ### General Safety
-
 - Always wear your volunteer ID badge
-- Follow the buddy system when possible
-- Know the location of first aid kits
-- Report any incidents immediately
-
-### Emergency Contacts
-
-In case of emergency, contact: [Emergency Contact Info]
+- Follow all posted safety signs and instructions.
+- Report any injuries or safety hazards immediately to a team leader.
+- Use personal protective equipment (PPE) as required for specific tasks.

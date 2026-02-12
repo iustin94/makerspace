@@ -1,13 +1,8 @@
 ---
 title: "Code of Conduct"
-weight: 10
-section: "Volunteer Guidelines"
+weight: 30
+section: "General Rules"
 anchor: "code-of-conduct"
 ---
-
-All volunteers are expected to:
-
-- Treat everyone with respect and dignity
-- Maintain confidentiality of sensitive information
-- Represent the organization professionally
-- Report any concerns to a team leader
+### The O’Town Garage is an inclusive organisation where everyone is welcome
+We want everyone to have an enjoyable and fulfilling experience. Everyone is expected to be friendly and respectful towards each other. This applies to all of O’Town Garage’s physical meetings, events and the like, as well as all online communication channels and virtual activities.

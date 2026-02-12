@@ -1,8 +1,7 @@
 ---
 title: "Welcome"
-weight: 1
+weight: 10
 section: "Getting Started"
 anchor: "welcome"
 ---
-
-Thank you for joining our volunteer community. This documentation will help you get started and make the most of your experience with us.
+Thank you for joining our community. This documentation will help you get started and make the most of your experience at the makerspace.

@@ -7,24 +7,35 @@ theme = 'hugo-up-business-main'
   description = "Empowering communities through volunteer action"
   copyright = "© 2026 O'Town Makerspace. All rights reserved."
   logo = "images/branding/otown_logo_2.svg"
+  location = ["Copenhagen, Denmark"]
+  contact = ["info@theotowngarage.com"]
+  calendarIcsUrl = "https://calendar.google.com/calendar/ical/info%40theotowngarage.com/public/basic.ics"
+  docSections = ["Getting Started", "General Rules", "Resources", "Legal & Policy"]
+
+  [params.colors]
+    accent = "#F68048"
+    accent_2 = "#e75008"
+    primary = "#EDF2F8"
+    primary_2 = "#E1E9F4"
+    secondary = "#0D1A63"
+    secondary_2 = "#1A2CA3"
+    gray_light = "#EEF1FF"
+    gray_dark = "#0D1A63"
+    tertiary = "#1A2CA3"
 
   [params.social]
     facebook = "#"
     instagram = "#"
-
-  location = [
-    "Copenhagen, Denmark"
-  ]
-
-  contact = [
-    "info@theotowngarage.com"
-  ]
 
 # Enable raw HTML in markdown
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
 
 # Main navigation menu
 [[menus.main]]
@@ -43,14 +54,19 @@ theme = 'hugo-up-business-main'
   weight = 3
 
 [[menus.main]]
+  name = "Workshops"
+  url = "/about/work-areas/"
+  weight = 4
+
+[[menus.main]]
   name = "Docs"
   url = "/docs/"
-  weight = 4
+  weight = 5
 
 [[menus.main]]
   name = "News"
   url = "/news/"
-  weight = 5
+  weight = 6
 
 # CTA button in header
 [[menus.buttons]]
